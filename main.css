@@ -69,9 +69,11 @@ main {
 .asideBar nav ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   list-style: none;
   padding: 0;
+  margin-bottom: 25px;
+
 }
 
 .asideBar nav ul li a {
@@ -79,7 +81,7 @@ main {
   font-weight: 600;
   color: white;
   border-bottom: 2px solid transparent; 
-  padding-bottom: 5px;
+  padding: 15px 0px;
   transition: color 0.3s, border-color 0.3s, transform 0.2s ease;
 }
 
@@ -104,6 +106,27 @@ main {
   color: var(--texto-destaque);
 }
 
+.btn-logout {
+  background-color: #e53935;    
+  color: #fff;                 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-logout:hover {
+  background-color: #c62828;    
+  transform: scale(1.05);        
+}
+
+.btn-logout:active {
+  transform: scale(0.98);       
+}
 
 /* TopBar */
 .topBar {
@@ -129,7 +152,17 @@ main {
 }
 
 .accountInfos i {
+  color: var(--texto-claro);
+  border-bottom: 2px solid transparent; 
+  padding-bottom: 5px;
+  transition: color 0.3s, border-color 0.3s, transform 0.2s ease;
+
+}
+
+.accountInfos i:hover{
   color: var(--texto-destaque);
+  border-bottom-color: var(--texto-destaque);
+
 }
 
 
@@ -170,7 +203,7 @@ main {
 
 .upCard:hover {
   background: var(--gradiente-card-hover);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 /* Cartões grandes */
@@ -190,7 +223,7 @@ main {
 
 .bigCard:hover {
   background: var(--gradiente-card-hover);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 /* Títulos estilizados */
@@ -245,16 +278,22 @@ tr:nth-child(odd) {
 
 /* Botão nova reserva */
 .nova-reserva {
-  background: var(--gradiente-card);
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: var(--gradiente-card); 
   color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  width: fit-content;
   font-weight: bold;
-  border-radius: 15px;
-  padding: 12px 20px;
-  box-shadow: 0 0 5px rgba(203, 108, 230, 0.5);
+  box-shadow: 0 0 12px rgba(203, 108, 230, 0.3);
+  transition: background 0.8s ease-in-out, transform 0.5s ease;
+
 }
 
 .nova-reserva:hover {
-  transform: scale(1.03);
+  background: var(--gradiente-card-hover);
+  transform: translateY(-2px);
 }
 
 /* Rodapé */

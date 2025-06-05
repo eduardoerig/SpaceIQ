@@ -94,21 +94,6 @@ tbody tr:nth-child(even) {
   margin-right: 8px;
 }
 
-.nova-reserva {
-  margin-top: 20px;
-  padding: 12px 18px;
-  background: linear-gradient(135deg, #4f00ff, #cb6ce6);
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: bold;
-  box-shadow: 0 0 8px rgba(203, 108, 230, 0.4);
-}
-
-.nova-reserva:hover {
-  transform: scale(1.03);
-}
 
 /* Modal de reserva */
 #popupModal {
