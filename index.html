@@ -1,0 +1,258 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="author" name="Bruno Carletto Adamczyk">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sytem.css">
+    <script src="config/js/main.js" defer=""></script>
+    <title>SpaceIQ</title>
+</head>
+
+<body>
+            <div class="layout">
+            <aside class="asideBar">
+                <div class="titlePage">
+                    <i class="fa-solid fa-bars"></i>
+
+                    <h2>
+                        Gestor Master <br>
+                        <span>FUKING</span>
+                    </h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home">Inicio <span class="notfications"></span></a></li>
+                        <li><a href="">Configuração <span class="notfications"></span></a></li>
+                        <li><a href="">Minha conta <span class="notfications"></span></a></li>
+                        <li><a href="">Perfils <span class="notfications"></span></a></li>
+                        <li><a href="">Aparencia <span class="notfications"></span></a></li>
+                        <li><a href="">Diario <span class="notfications"></span></a></li>
+                        <li><a href="">Suporte <span class="notfications">1</span></a></li>
+                        <li><a href="">Grupos <span class="notfications"></span></a></li>
+                        <li><a href="">Acessibilidade <span class="notfications"></span></a></li>
+                        <li><a href="">Idiomas <span class="notfications"></span></a></li>
+                        <li><a href="">Sobre nós <span class="notfications"></span></a></li>
+                    </ul>
+                </nav>
+                <button class="btn-logout">sair</button>
+            </aside>
+                <main>
+                            <div class="topBar">
+                    <div class="betweenBar">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="searchBar" placeholder="Buscar...">
+                        </div>
+                        <div class="accountInfos">
+                            <i class="fa-solid fa-globe"></i>
+                            <i class="fa-solid fa-bell"></i>
+                            <div class="profileCircle">
+                                <p>João Professor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <section class="main">
+    <h1>Itens para reserva</h1>
+    <div class="selectTopics">
+        <nav>
+            <ul>
+                <li value="1" class="sessionsToReserve">Salas</li><li value="2" class="sessionsToReserve">Materias</li><li value="3" class="sessionsToReserve">Aparelhos</li><li value="4" class="sessionsToReserve">Quadras</li>            </ul>
+        </nav>
+    </div>
+    <section class="sessionClassroom">
+        
+                <a href="reserve?keyaccess=PROJ001" class="upCard">
+                    <h3>Projetor Multimídia</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=NOTE001" class="upCard">
+                    <h3>Notebook Dell</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=QUAD001" class="upCard">
+                    <h3>Quadro Interativo</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=SOUND001" class="upCard">
+                    <h3>Caixa de Som</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=MIC001" class="upCard">
+                    <h3>Microfone sem fio</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=PRINT001" class="upCard">
+                    <h3>Impressora Laser</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=SCAN001" class="upCard">
+                    <h3>Scanner</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=TV001" class="upCard">
+                    <h3>Televisão Smart</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=TAB001" class="upCard">
+                    <h3>Tablet Educacional</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+            
+                <a href="reserve?keyaccess=ROUT001" class="upCard">
+                    <h3>Roteador Wi-Fi</h3>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </a>
+                </section>
+    <br>
+    <!-- <section class="allSessions">
+        <h1>Todos os itens:</h1>
+        <div class="navegation">
+            
+                    <a href="reserve?keyaccess=PROJ001" class="bigCard">
+                        <h3>Projetor Multimídia</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=NOTE001" class="bigCard">
+                        <h3>Notebook Dell</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=QUAD001" class="bigCard">
+                        <h3>Quadro Interativo</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=SOUND001" class="bigCard">
+                        <h3>Caixa de Som</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=MIC001" class="bigCard">
+                        <h3>Microfone sem fio</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=PRINT001" class="bigCard">
+                        <h3>Impressora Laser</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=SCAN001" class="bigCard">
+                        <h3>Scanner</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=TV001" class="bigCard">
+                        <h3>Televisão Smart</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=TAB001" class="bigCard">
+                        <h3>Tablet Educacional</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=ROUT001" class="bigCard">
+                        <h3>Roteador Wi-Fi</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                        </div>
+    </section> -->
+    <br>
+    <section class="bigSessions">
+        <h1>Destaques:</h1>
+        <div class="navegation">
+            
+                    <a href="reserve?keyaccess=PROJ001" class="bigCard">
+                        <h3>Projetor Multimídia</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                
+                    <a href="reserve?keyaccess=NOTE001" class="bigCard">
+                        <h3>Notebook Dell</h3>
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                        </div>
+    </section>
+    <section class="myReserves">
+        <h1>Suas reservas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sala</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Equipamento</th>
+                    <th>Turma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="sala">Laboratório 1</td>
+                    <td>23/08</td>
+                    <td>7:30 - 8:15</td>
+                    <td><a href="#">Nenhum</a></td>
+                    <td>1º A</td>
+                </tr>
+                <tr>
+                    <td class="sala">Laboratório 2</td>
+                    <td>27/08</td>
+                    <td>9:00 - 9:45</td>
+                    <td><a href="#">Frascos químicos - 20</a></td>
+                    <td>2º C</td>
+                </tr>
+                <tr>
+                    <td class="sala">Laboratório 2</td>
+                    <td>29/08</td>
+                    <td>10:45 - 11:30</td>
+                    <td><a href="#">Boneco de teste - 1</a></td>
+                    <td>1º A</td>
+                </tr>
+                <tr>
+                    <td class="sala">Laboratório 1</td>
+                    <td>03/09</td>
+                    <td>7:30 - 8:15</td>
+                    <td><a href="#">Nenhum</a></td>
+                    <td>1º A</td>
+                </tr>
+                <tr>
+                    <td class="sala">Laboratório 2</td>
+                    <td>13/09</td>
+                    <td>11:30 - 12:15</td>
+                    <td><a href="#">Nenhum</a></td>
+                    <td>2º C</td>
+                </tr>
+                <tr>
+                    <td class="sala">Laboratório 1</td>
+                    <td>18/09</td>
+                    <td>10:00 - 10:45</td>
+                    <td><a href="#">Termômetros - 25</a></td>
+                    <td>1º A</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="nova-reserva">Nova reserva</div>
+    </section>
+</section>        </main>
+        </div>
+                    <footer>
+                <div class="container text-center">
+                    Sistema de reserva de recursos didáticos © 2025 <br>
+                    Developed by Bruno Carletto Adamczyk, Eduardo Felipe Storck Erig, Henrique de Oliveira Ritter e Victor Hugo Kleinshmidt dos Santos Berto
+                </div>
+            </footer>
+        
+
+</body></html>

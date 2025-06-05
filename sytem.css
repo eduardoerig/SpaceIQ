@@ -1,0 +1,121 @@
+/* ========== Estilo dark/neon para sistema ========== */
+
+/* Espaçamento e fundo das sessões */
+.main, .maina {
+  gap: 25px;
+  margin: 30px;
+  color: white;
+  background-color: transparent;
+}
+
+/* Seletor de tópicos (Salas, Materiais etc) */
+.selectTopics nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0;
+}
+
+.selectTopics nav ul li {
+  font-weight: 600;
+  color: white;
+  border-bottom: 2px solid transparent; /* evita empurrar */
+  padding-bottom: 5px;
+  transition: color 0.3s, border-color 0.3s, transform 0.2s ease;
+}
+
+
+.selectTopics nav ul li:hover {
+  color: #cb6ce6;
+  border-bottom-color: #cb6ce6;
+}
+
+.selectTopics nav ul li.selected {
+  color: #cb6ce6;
+  border-bottom-color: #cb6ce6;
+}
+
+/* Cartões horizontais com rolagem */
+.sessionClassroom {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+/* Cartões grandes */
+.bigSessions .navegation,
+.allSessions .navegation {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+/* Tabela de reservas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #222;
+  border-bottom: 2px solid #444;
+  font-size: 16px;
+}
+
+td {
+  font-size: 15px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #1c1c1c;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.sala::before {
+  content: "●";
+  color: #cb6ce6;
+  margin-right: 8px;
+}
+
+.nova-reserva {
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #4f00ff, #cb6ce6);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(203, 108, 230, 0.4);
+}
+
+.nova-reserva:hover {
+  transform: scale(1.03);
+}
+
+/* Modal de reserva */
+#popupModal {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popup-content {
+  background-color: #1e1e1e;
+  color: white;
+}
